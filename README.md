@@ -1,4 +1,4 @@
-![image](https://github.com/Venura-94/Hubspot_Assignment/assets/137409412/15c89506-5768-409b-ad91-116bb86ba26d)# Problem and Solution Break Down 
+# Problem and Solution Break Down 
 ## Step 1 - First created the Python 3.8 environment with the dependencies 
 ![image](https://github.com/Venura-94/Hubspot_Assignment/assets/137409412/998df2c6-c5c8-41e2-b09a-db5bec397c43)
 ## Step 2 - Then created my personal CRM using Hubspot
