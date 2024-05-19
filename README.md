@@ -9,11 +9,14 @@ Fetching data from HubSpot CRM
 ### 1.	Emails 
 First use the basic get method to list what is returned via the properties with below endpoint
 ![image](https://github.com/Venura-94/Hubspot_Assignment/assets/137409412/c7ee8036-3004-4248-a559-20e20c35114f)
+
 Then use post method with search endpoint and filtered the specific date range of emails and send query parameters to retrieve data in Json format.
 ![image](https://github.com/Venura-94/Hubspot_Assignment/assets/137409412/53f71d3d-7198-4932-8b76-adbcdfe3bfff)
+
 ### 2.	Tickets
 Like above (in emails), first used get method with below basic endpoint to see what’s returned. 
 ![image](https://github.com/Venura-94/Hubspot_Assignment/assets/137409412/97cb8c12-1ff2-43ea-9edd-b31ead8f8ad3)
+
 Then use post method with search endpoint and filtered the high priority tickets and send query parameters to retrieve data in Json format.
 ![image](https://github.com/Venura-94/Hubspot_Assignment/assets/137409412/6d7e3fda-6037-4d00-9e52-048a15b853dd)
 ### Step - 4 – Created private app and get API token by selecting the necessary objects mentioned in “Standard scopes” in each end point according to documentation.
