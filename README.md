@@ -4,14 +4,12 @@
 ## Step 2 - Then created my personal CRM using Hubspot
 ![image](https://github.com/Venura-94/Hubspot_Assignment/assets/137409412/a2c17ebb-a46b-4c43-84f5-33a9241f90d5)
 Step -3 - Check for the endpoints to interact with in order to fetch the data from emails and tickets assigned.
-### 1.	Emails
-Engagements | Email (hubspot.com) 
+### 1.	Emails 
 First use the basic get method to list what is returned via the properties with below endpoint
 ![image](https://github.com/Venura-94/Hubspot_Assignment/assets/137409412/c7ee8036-3004-4248-a559-20e20c35114f)
 Then use post method with search endpoint and filtered the specific date range of emails and send query parameters to retrieve data in Json format.
 ![image](https://github.com/Venura-94/Hubspot_Assignment/assets/137409412/53f71d3d-7198-4932-8b76-adbcdfe3bfff)
 ### 2.	Tickets
-CRM API | Tickets (hubspot.com)
 Like above (in emails), first used get method with below basic endpoint to see what’s returned. 
 ![image](https://github.com/Venura-94/Hubspot_Assignment/assets/137409412/97cb8c12-1ff2-43ea-9edd-b31ead8f8ad3)
 Then use post method with search endpoint and filtered the high priority tickets and send query parameters to retrieve data in Json format.
