@@ -3,7 +3,7 @@
 ![image](https://github.com/Venura-94/Hubspot_Assignment/assets/137409412/998df2c6-c5c8-41e2-b09a-db5bec397c43)
 ## Step 2 - Then created my personal CRM using Hubspot
 ![image](https://github.com/Venura-94/Hubspot_Assignment/assets/137409412/a2c17ebb-a46b-4c43-84f5-33a9241f90d5)
-Step -3 - Check for the endpoints to interact with in order to fetch the data from emails and tickets assigned.
+## Step -3 - Check for the endpoints to interact with in order to fetch the data from emails and tickets assigned.
 ### 1.	Emails 
 First use the basic get method to list what is returned via the properties with below endpoint
 ![image](https://github.com/Venura-94/Hubspot_Assignment/assets/137409412/c7ee8036-3004-4248-a559-20e20c35114f)
