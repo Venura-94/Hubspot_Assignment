@@ -28,15 +28,14 @@ Then use post method with search endpoint and filtered the high priority tickets
 2.	Header configurations - HTTP headers for API request including authorization token
 3.	Function to extract and transform data into readable format 
 ##### extract_tickets ()
-•	Sends a POST request to the HubSpot tickets API endpoint. 
-•	Filters tickets with high priority and extracts properties such as hs_object_id, subject, content, hs_ticket_category, and hs_ticket_priority.
-•	Converts the extracted ticket data into a Pandas Data Frame. 
+- •	Sends a POST request to the HubSpot tickets API endpoint. 
+- •	Filters tickets with high priority and extracts properties such as hs_object_id, subject, content, hs_ticket_category, and hs_ticket_priority.
+- •	Converts the extracted ticket data into a Pandas Data Frame. 
 #### extract_emails()
-•	Sends a POST request to the HubSpot emails API endpoint. 
-•	Filters emails created within a specific time range and extracts properties such as hs_object_id, hs_createdate.
-•	Converts the extracted email data into a Pandas Data Frame.
-4.	Load in to CSV
-Visualization.xlsx
+- •	Sends a POST request to the HubSpot emails API endpoint. 
+- •	Filters emails created within a specific time range and extracts properties such as hs_object_id, hs_createdate.
+- •	Converts the extracted email data into a Pandas Data Frame.
+4.	Load in to CSV - Visualization.xlsx
 
 
 
