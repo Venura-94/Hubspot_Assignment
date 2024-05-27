@@ -41,6 +41,10 @@ Then use post method with search endpoint and filtered the high priority tickets
 
 ![image](https://github.com/Venura-94/Hubspot_Assignment/assets/137409412/5c6f3607-03b6-4393-a5c0-fa39b6bfb388)
 
+### Step 3 - DynamoDB
+
+Working on it 
+
 
 
 
