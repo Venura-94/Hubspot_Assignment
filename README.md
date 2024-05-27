@@ -30,6 +30,9 @@ Then use post method with search endpoint and filtered the high priority tickets
 4. extract_tickets()
 5. extract_emails()
 
+## AWS Deployment - Project sample diagram
+
+
 
 
 
