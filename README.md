@@ -32,6 +32,10 @@ Then use post method with search endpoint and filtered the high priority tickets
 
 ## AWS Deployment - Project sample diagram
 
+### Step 1 - EC2 Deployment
+
+### Step 2 - Migrate to Lambda
+
 
 
 
