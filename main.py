@@ -3,6 +3,7 @@ import pandas as pd
 from dotenv import load_dotenv
 import os
 
+# Load environment variables
 load_dotenv()
 
 # API endpoint and headers
@@ -35,17 +36,12 @@ def extract_tickets():
     }
 
     response = requests.post(endpoint, headers=headers, json=params)
-    if response.status_code == 200:
-        print("request successful")
-    else:
-        raise Exception(f"request failed with status code: {response.status_code}")
+    if response.status_code != 200:
+        raise Exception(f"Request failed with status code: {response.status_code}")
     
-    # parse the response
     data = response.json()
-    # extract the useful information
     ticket_list = []
-    results = data['results']
-    for obj in results:
+    for obj in data['results']:
         extracted_obj = {
             "ticket_id": obj['properties']['hs_object_id'],
             "subject": obj['properties']['subject'],
@@ -55,8 +51,7 @@ def extract_tickets():
         }
         ticket_list.append(extracted_obj)
 
-    ticket_df = pd.DataFrame(ticket_list)
-    return ticket_df
+    return pd.DataFrame(ticket_list)
 
 def extract_emails():
     endpoint = "https://api.hubapi.com/crm/v3/objects/emails/search"
@@ -83,17 +78,12 @@ def extract_emails():
         }
     
     response = requests.post(endpoint, headers=headers, json=params)
-    if response.status_code == 200:
-        print("request successful")
-    else:
-        raise Exception(f"request failed with status code: {response.status_code}")
+    if response.status_code != 200:
+        raise Exception(f"Request failed with status code: {response.status_code}")
     
-    # parse the response
     data = response.json()
-    # extract the useful information
     email_list = []
-    results = data['results']
-    for obj in results:
+    for obj in data['results']:
         extracted_obj = {
             "create_date": obj['properties']['hs_createdate'],
             "email_id": obj['properties']['hs_object_id'],
@@ -103,10 +93,9 @@ def extract_emails():
         }
         email_list.append(extracted_obj)
 
-    email_df = pd.DataFrame(email_list)
-    return email_df
+    return pd.DataFrame(email_list)
 
-if __name__ == "__main__":
+def export_data():
     ticket_df = extract_tickets()
     email_df = extract_emails()
 
@@ -114,4 +103,4 @@ if __name__ == "__main__":
         ticket_df.to_excel(writer, sheet_name='tickets', index=False)
         email_df.to_excel(writer, sheet_name='emails', index=False)
 
-    print("Data written to table_visualization.xlsx")
+    return "Data written to visualization.xlsx"
