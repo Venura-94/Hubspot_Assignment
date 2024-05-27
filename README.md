@@ -34,9 +34,12 @@ Then use post method with search endpoint and filtered the high priority tickets
 
 ### Step 1 - EC2 Deployment
 
+![image](https://github.com/Venura-94/Hubspot_Assignment/assets/137409412/a844d65e-fbad-4f6d-9c71-a4ae3ab956bd)
+
 ### Step 2 - Migrate to Lambda
 
 
+![image](https://github.com/Venura-94/Hubspot_Assignment/assets/137409412/5c6f3607-03b6-4393-a5c0-fa39b6bfb388)
 
 
 
